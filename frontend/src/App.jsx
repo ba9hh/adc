@@ -11,6 +11,7 @@ import Header from "./components/Header.jsx";
 import HomeHeader from "./components/HomeHeader.jsx";
 import Dashboard from "./dashboard/Dashboard.jsx";
 import { Outlet } from "react-router-dom";
+import Account from "./Account/Account.jsx";
 function HomeLayout() {
   return (
     <>
@@ -44,6 +45,7 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/guest/favorites" element={<Favorites />} />
           <Route path="/admin" element={<Dashboard />} />
+          <Route path="/account" element={<Account />} />
         </Route>
       </Routes>
     </>
