@@ -7,7 +7,7 @@ const Product = () => {
   return (
     <div className="">
       {/* <Header /> */}
-      <Breadcrumbs />
+      {/* <Breadcrumbs /> */}
       <div className="flex justify-center gap-8 mt-8 mx-20">
         <ProductPhotos />
         <ProductDescription />
