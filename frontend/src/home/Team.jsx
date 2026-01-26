@@ -10,7 +10,7 @@ const Team = () => {
   const rotations = ["-rotate-3", "rotate-4", "-rotate-3", "rotate-4"];
 
   return (
-    <div className="px-20">
+    <div className="px-10 mb-20">
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-bold text-[#D6A6A6]">
           <span className="text-xs font-light text-black">the </span>Team
