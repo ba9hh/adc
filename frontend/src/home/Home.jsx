@@ -12,9 +12,9 @@ const Home = () => {
       {/* <Header /> */}
       <UnderHeader />
       <FruitScroll />
-      <Build />
       <Events />
       <Team />
+      <Build />
     </>
   );
 };
