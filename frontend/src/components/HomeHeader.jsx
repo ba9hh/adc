@@ -56,7 +56,9 @@ const HomeHeader = () => {
         </div>
         <div className="flex flex-col items-end gap-2 ">
           <div className="flex items-center gap-2">
-            <User className="w-7 h-7 text-[#D6A6A6]" />
+            <Link to="/account">
+              <User className="w-7 h-7 text-[#D6A6A6]" />
+            </Link>
             <Link to="/guest/favorites">
               <Flame className="w-7 h-7 text-[#D6A6A6]" />
             </Link>

@@ -137,7 +137,9 @@ const Header = () => {
                     className="w-full bg-transparent text-sm outline-none placeholder:text-stone-400"
                   />
                 </div>
-                <User className="w-7 h-7 text-[#D6A6A6]" />
+                <Link to="/account">
+                  <User className="w-7 h-7 text-[#D6A6A6]" />
+                </Link>
                 <Link to="/guest/favorites">
                   <Flame className="w-7 h-7 text-[#D6A6A6]" />
                 </Link>
