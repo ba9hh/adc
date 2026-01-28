@@ -46,7 +46,7 @@ const HomeHeader = () => {
         </div>
         <button
           // onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="rounded-xl border-2 border-[#D6A6A6] bg-white/80 p-1 dark:border-stone-700 dark:bg-stone-800 w-fit"
+          className="md:hidden rounded-xl border-2 border-[#D6A6A6] bg-white/80 p-1 dark:border-stone-700 dark:bg-stone-800 w-fit"
           aria-label="Open filters"
         >
           <Menu className="h-7 w-7 text-[#D6A6A6]" />
