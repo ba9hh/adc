@@ -19,7 +19,7 @@ export default function FruitScroll() {
   ];
 
   return (
-    <div className=" bg-gradient-to-br from-white via-[#D6B6A6] to-white flex items-center justify-center overflow-hidden mx-10">
+    <div className=" bg-gradient-to-br from-white via-[#D6B6A6] to-white flex items-center justify-center overflow-hidden md:mx-10">
       <div className="w-full">
         <div className="relative overflow-hidden py-4">
           {/* Gradient overlays for fade effect */}

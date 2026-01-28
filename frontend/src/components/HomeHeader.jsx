@@ -6,6 +6,7 @@ import {
   Flame,
   User,
   Search,
+  Menu,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 const HomeHeader = () => {
@@ -16,8 +17,8 @@ const HomeHeader = () => {
           Livraison gratuite sur les commandes supérieures à 100DT
         </h1>
       </div>
-      <div className=" px-10 pb-2 pt-4 grid grid-cols-3 items-center">
-        <div className="grid grid-cols-2 gap-2 w-1/2">
+      <div className="px-2 md:px-10 pb-2 pt-4 grid grid-cols-3 items-center">
+        <div className="hidden md:grid grid-cols-2 gap-2 w-1/2">
           <Link
             to="/c/bracelets"
             className="text-sm border border-[#D6A6A6] text-[#D6A6A6] p-1"
@@ -43,6 +44,13 @@ const HomeHeader = () => {
             Earrings 💎
           </Link>
         </div>
+        <button
+          // onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="rounded-xl border-2 border-[#D6A6A6] bg-white/80 p-1 dark:border-stone-700 dark:bg-stone-800 w-fit"
+          aria-label="Open filters"
+        >
+          <Menu className="h-7 w-7 text-[#D6A6A6]" />
+        </button>
         <div className="border-b-2 border-[#D6A6A6] pb-0.5">
           <Link
             to="/"
@@ -66,7 +74,7 @@ const HomeHeader = () => {
               <ShoppingBasket className="w-7 h-7 text-[#D6A6A6]" />
             </Link>
           </div>
-          <div className="flex items-center rounded-2xl border-2 border-[#D6A6A6] bg-white/90 px-3 py-1 dark:border-stone-700 dark:bg-stone-800">
+          <div className="hidden md:flex items-center rounded-2xl border-2 border-[#D6A6A6] bg-white/90 px-3 py-1 dark:border-stone-700 dark:bg-stone-800">
             <Search className="mr-2 h-6 w-6 text-[#D6A6A6]" />
             <input
               // value={query}

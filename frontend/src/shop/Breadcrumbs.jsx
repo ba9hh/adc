@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Breadcrumbs = () => {
   return (
-    <div className="mx-10 mt-6">
-      <nav className="border border-[#D6B6A6] px-6 py-1 text-sm text-black">
+    <div className="mx-0 my-10">
+      <nav className=" bg-gray-100 px-6 py-2 text-sm text-black">
         <ol className="flex items-center space-x-2">
           <li>
             <Link

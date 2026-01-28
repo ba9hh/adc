@@ -3,7 +3,7 @@ import { SlidersHorizontal } from "lucide-react";
 
 const ShopFilters = () => {
   return (
-    <div className="mx-10 mt-5 flex justify-between items-end">
+    <div className="mx-20 mt-5 flex justify-between items-end">
       <div>
         <button className="px-4 py-1 border border-gray-400">
           <span>

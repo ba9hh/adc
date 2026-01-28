@@ -5,7 +5,13 @@ import braclet from "../assets/braclet.png";
 import earring from "../assets/earring.png";
 import { Flame } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useCart } from "../context/CartContext.jsx";
+import { useFavorites } from "../context/FavoritesContext";
+
 const ShopProducts = () => {
+  const { addToCart } = useCart();
+  const { toggleFavorite, isFavorite } = useFavorites();
+
   const products = [
     {
       id: 1,
@@ -32,9 +38,16 @@ const ShopProducts = () => {
       img: ring,
     },
   ];
-
+  const handleAddToCart = (e, product) => {
+    e.preventDefault(); // Prevent Link navigation
+    addToCart(product);
+  };
+  const handleToggleFavorite = (e, product) => {
+    e.preventDefault();
+    toggleFavorite(product);
+  };
   return (
-    <div className="mx-10 grid grid-cols-4 gap-x-4 gap-y-16 mt-6">
+    <div className="mx-20 grid grid-cols-4 gap-x-4 gap-y-16 mt-6">
       {products.map((product) => (
         <Link
           to={`/product/${product.id}`}
@@ -53,9 +66,14 @@ const ShopProducts = () => {
               <span className=" text-sm">{product.price}</span>
             </div>
             <div className="flex items-center justify-center">
-              <Flame className="w-6 h-6 text-[#D6A6A6]" />
+              <button onClick={(e) => handleToggleFavorite(e, product)}>
+                <Flame className="w-6 h-6 text-[#D6A6A6]" />
+              </button>
               <div className="border-2 border-[#D6A6A6] w-fit h-fit rounded-2xl">
-                <button className=" px-3 py-1 border-2 bg-[#D6A6A6] text-white text-xs font-bold rounded-2xl border-white">
+                <button
+                  onClick={(e) => handleAddToCart(e, product)}
+                  className=" px-3 py-1 border-2 bg-[#D6A6A6] text-white text-xs font-bold rounded-2xl border-white"
+                >
                   Add to Cart
                 </button>
               </div>
@@ -81,7 +99,9 @@ const ShopProducts = () => {
               <span className=" text-sm">{product.price}</span>
             </div>
             <div className="flex items-center justify-center">
-              <Flame className="w-6 h-6 text-[#D6A6A6]" />
+              <button onClick={(e) => handleToggleFavorite(e, product)}>
+                <Flame className="w-6 h-6 text-[#D6A6A6]" />
+              </button>
               <div className="border-2 border-[#D6A6A6] w-fit h-fit rounded-2xl">
                 <button className=" px-3 py-1 border-2 bg-[#D6A6A6] text-white text-xs font-bold rounded-2xl border-white">
                   Add to Cart

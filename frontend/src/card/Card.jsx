@@ -5,7 +5,7 @@ import CartSummary from "./CartSummary";
 const Card = () => {
   return (
     <div>
-      <CardHeader />
+      {/* <CardHeader /> */}
       <CardProducts />
       <CartSummary />
     </div>
