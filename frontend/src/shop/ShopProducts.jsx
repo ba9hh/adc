@@ -41,7 +41,7 @@ const ShopProducts = () => {
           key={product.id}
           className="flex flex-col"
         >
-          <div className="border-4 border-[#D6A6A6]">
+          <div className="border-0 border-[#D6A6A6]">
             <img
               src={product.img}
               className="aspect-14/11 border-4 border-white object-cover"

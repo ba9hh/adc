@@ -5,11 +5,11 @@ const ShopFilters = () => {
   return (
     <div className="mx-10 mt-5 flex justify-between items-end">
       <div>
-        <button className="px-4 py-2 border">
+        <button className="px-4 py-1 border border-gray-400">
           <span>
             <SlidersHorizontal className="w-4 h-4 inline mr-2 mb-1" />
           </span>
-          Filters +
+          Filters
         </button>
       </div>
       <div>

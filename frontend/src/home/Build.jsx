@@ -182,6 +182,26 @@ const Build = () => {
       img: "https://i.etsystatic.com/62205090/r/il/af8efd/7400096323/il_794xN.7400096323_s78i.jpg",
       name: "Sparkle",
     },
+    {
+      id: 9,
+      img: "https://i.etsystatic.com/62205090/r/il/b209bc/7352163914/il_794xN.7352163914_3alz.jpg",
+      name: "Sparkle",
+    },
+    {
+      id: 10,
+      img: "https://i.etsystatic.com/62205090/r/il/42003f/7352163866/il_794xN.7352163866_7dox.jpg",
+      name: "Sparkle",
+    },
+    {
+      id: 11,
+      img: "https://i.etsystatic.com/62205090/r/il/19bf2b/7400096331/il_794xN.7400096331_c7ff.jpg",
+      name: "Sparkle",
+    },
+    {
+      id: 12,
+      img: "https://i.etsystatic.com/62205090/r/il/1f737b/7352163900/il_794xN.7352163900_3cop.jpg",
+      name: "Sparkle",
+    },
   ];
 
   const toggleBead = (bead) => {
@@ -264,7 +284,7 @@ const Build = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:w-2/3 gap-4">
           <div className="flex flex-col border-2 border-gray-200 rounded-lg overflow-hidden">
             <h1 className="text-center p-4 text-xl font-semibold bg-gradient-to-r from-blue-100 to-purple-100">
-              Beads / Charms (max 5)
+              Charms (max 5)
             </h1>
             <div className="grid grid-cols-4 p-2">
               {beads.map((bead) => (
@@ -284,7 +304,7 @@ const Build = () => {
           </div>
           <div className="flex flex-col border-2 border-gray-200 rounded-lg overflow-hidden">
             <h1 className="text-center p-4 text-xl font-semibold bg-gradient-to-r from-purple-100 to-pink-100">
-              Chain / Thread
+              Thread
             </h1>
             <div className="grid grid-cols-4 p-2">
               {chains.map((chain) => (
@@ -313,18 +333,6 @@ const Build = () => {
           </div>
 
           <div className="mt-6 space-y-3">
-            {/* <div className="text-sm text-gray-600">
-              <p>
-                <strong>Chain:</strong> {selectedChain?.name || "None"}
-              </p>
-              <p>
-                <strong>Beads:</strong>{" "}
-                {selectedBeads.length > 0
-                  ? selectedBeads.map((b) => b.name).join(", ")
-                  : "None"}
-              </p>
-            </div> */}
-
             <button
               onClick={clearAll}
               className="w-full bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors"
@@ -332,7 +340,7 @@ const Build = () => {
               Clear All
             </button>
 
-            <button className="w-full bg-[#D6B6A6] hover:bg-[#C4A594] text-white font-semibold py-2 px-4 rounded-lg transition-colors">
+            <button className="w-full bg-[#D6A6A6] hover:bg-[#C4A594] text-white font-semibold py-2 px-4 rounded-lg transition-colors">
               Add to Cart
             </button>
           </div>
