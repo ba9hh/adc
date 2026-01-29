@@ -255,7 +255,7 @@ const Build = () => {
   };
 
   return (
-    <div className="mx-4 md:mx-10 mt-8">
+    <div className="mx-4 md:mx-20 mt-8">
       <div className="flex justify-between items-center mb-8">
         {/* <h1 className="text-4xl font-semibold">🎨</h1> */}
         <h1 className="text-xl md:text-3xl font-bold text-[#D6A6A6] border-[#D6B6A6] pb-1">

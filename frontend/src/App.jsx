@@ -28,7 +28,7 @@ function HomeLayout() {
 function StandardLayout() {
   return (
     <>
-      <Header />
+      <HomeHeader />
       <Outlet />
     </>
   );

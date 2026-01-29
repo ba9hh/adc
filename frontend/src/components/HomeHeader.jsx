@@ -11,7 +11,7 @@ import {
 import { Link } from "react-router-dom";
 const HomeHeader = () => {
   return (
-    <div>
+    <div className="sticky top-0 z-50 bg-white border-b border-gray-200 pb-2">
       <div className="w-full h-11 bg-[#D6A6A6] flex justify-center items-center">
         <h1 className="text-white font-semibold text-sm">
           Livraison gratuite sur les commandes supérieures à 100DT
@@ -44,19 +44,26 @@ const HomeHeader = () => {
             Earrings 💎
           </Link>
         </div>
-        <button
-          // onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden rounded-xl border-2 border-[#D6A6A6] bg-white/80 p-1 dark:border-stone-700 dark:bg-stone-800 w-fit"
-          aria-label="Open filters"
-        >
-          <Menu className="h-7 w-7 text-[#D6A6A6]" />
-        </button>
+        <div className="md:hidden grid grid-cols-2 gap-2 w-fit">
+          <button
+            // onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden rounded-xl border-0 border-[#D6A6A6] bg-white/80  dark:border-stone-700 dark:bg-stone-800 w-fit"
+            aria-label="Open filters"
+          >
+            <Menu className="h-6 w-6 text-[#D6A6A6]" />
+          </button>
+          <Link to="/account" className="flex md:hidden">
+            <User className="w-7 h-7 text-[#D6A6A6]" />
+          </Link>
+        </div>
         <div className="border-b-2 border-[#D6A6A6] pb-0.5">
           <Link
             to="/"
             className="flex flex-col items-center border-b-2 border-[#D6A6A6] pb-2"
           >
-            <h1 className="font-black text-[#D6A6A6] text-4xl">ADC</h1>
+            <h1 className="font-black text-[#D6A6A6] text-2xl md:text-4xl">
+              ADC
+            </h1>
             <h2 className="font-semibold text-[#D6A6A6] text-xs">
               Autour du cou
             </h2>
@@ -64,7 +71,7 @@ const HomeHeader = () => {
         </div>
         <div className="flex flex-col items-end gap-2 ">
           <div className="flex items-center gap-2">
-            <Link to="/account">
+            <Link to="/account" className="hidden md:flex">
               <User className="w-7 h-7 text-[#D6A6A6]" />
             </Link>
             <Link to="/guest/favorites">

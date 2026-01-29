@@ -5,9 +5,11 @@ import Breadcrumbs from "./Breadcrumbs";
 const Category = () => {
   const { category } = useParams();
   return (
-    <div className="flex flex-col mt-6">
+    <div className="flex flex-col">
       <Breadcrumbs />
-      {/* <h1 className="text-3xl mx-10 font-thin text-center ">{category}</h1> */}
+      <h1 className="text-[40px] font-normal text-center text-gray-500">
+        {category.charAt(0).toUpperCase() + category.slice(1)}
+      </h1>
       <CategoryProducts />
     </div>
   );

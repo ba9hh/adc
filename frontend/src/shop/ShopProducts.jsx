@@ -47,7 +47,7 @@ const ShopProducts = () => {
     toggleFavorite(product);
   };
   return (
-    <div className="mx-20 grid grid-cols-4 gap-x-4 gap-y-16 mt-6">
+    <div className="mx-1 md:mx-4 grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-16 mt-6">
       {products.map((product) => (
         <Link
           to={`/product/${product.id}`}

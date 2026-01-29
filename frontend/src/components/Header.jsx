@@ -97,13 +97,13 @@ const Header = () => {
             <div className="grid grid-cols-4 gap-2 w-fit">
               <button
                 // onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="rounded-xl border-2 border-[#D6A6A6] bg-white/80 p-1 dark:border-stone-700 dark:bg-stone-800 w-fit"
+                className="rounded-xl border-2 border-[#D6A6A6] p-1.5 dark:border-stone-700 dark:bg-stone-800 w-fit"
                 aria-label="Open filters"
               >
-                <Menu className="h-7 w-7 text-[#D6A6A6]" />
+                <Menu className="h-5 w-5 text-[#D6A6A6]" />
               </button>
-              <div className="flex items-center justify-center rounded-2xl border-2 border-[#D6A6A6] bg-white/90 px-0 py-1 dark:border-stone-700 dark:bg-stone-800">
-                <Search className=" h-6 w-6 text-[#D6A6A6]" />
+              <div className="flex items-center justify-center rounded-xl border-2 border-[#D6A6A6] bg-white/90 px-0 py-1 dark:border-stone-700 dark:bg-stone-800">
+                <Search className=" h-5 w-5 text-[#D6A6A6]" />
                 {/* <input
                     value={query}
                     onChange={handleChange}
