@@ -7,7 +7,7 @@ const Category = () => {
   return (
     <div className="flex flex-col">
       <Breadcrumbs />
-      <h1 className="text-[40px] font-normal text-center text-gray-500">
+      <h1 className="text-[40px] font-normal text-center text-gray-500 product-page">
         {category.charAt(0).toUpperCase() + category.slice(1)}
       </h1>
       <CategoryProducts />

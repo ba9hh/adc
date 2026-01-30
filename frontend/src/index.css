@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+.product-page {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.product-page * {
+  font-family: inherit;
+}

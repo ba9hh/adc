@@ -5,7 +5,7 @@ import anniversary from "../assets/anniversary.png";
 import birthday from "../assets/birthday.png";
 const Events = () => {
   return (
-    <div className="mx-20 mt-8">
+    <div className="md:mx-20 mt-8">
       <div className="flex justify-between items-center">
         <div className="border-b-2 border-[#D6A6A6]">
           <h1 className="border-b-2 text-[#D6A6A6] text-3xl font-bold mb-1">
@@ -24,7 +24,7 @@ const Events = () => {
           </h1>
         </div>
       </div>
-      <div className="grid grid-cols-4 mt-10">
+      <div className="grid grid-cols-2 md:grid-cols-4 mt-10">
         <div className="flex flex-col items-center">
           <img src={valentine} className="rounded-md" />
         </div>

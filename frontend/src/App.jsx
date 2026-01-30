@@ -52,9 +52,9 @@ function App() {
               <Route path="/card" element={<Card />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/guest/favorites" element={<Favorites />} />
-              <Route path="/admin" element={<Dashboard />} />
               <Route path="/account" element={<Account />} />
             </Route>
+            <Route path="/admin" element={<Dashboard />} />
           </Routes>
         </FavoritesProvider>
       </CartProvider>

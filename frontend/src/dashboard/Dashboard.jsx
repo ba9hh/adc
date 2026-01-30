@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import NavBar from "./NavBar";
-import Orders from "./Orders";
+import Orders from "./orders/Orders";
 import Categories from "./categories/Categories";
 import Products from "./products/Products";
-import Customers from "./Customers";
+import Customers from "./customers/Customers";
 import Header from "./Header";
 
 const Dashboard = () => {
