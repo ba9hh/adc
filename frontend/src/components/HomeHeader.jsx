@@ -9,7 +9,13 @@ import {
   Menu,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useCart } from "../context/CartContext.jsx";
+import { useFavorites } from "../context/FavoritesContext";
 const HomeHeader = () => {
+  const { getTotalItems } = useCart();
+  const cartCount = getTotalItems();
+  const { getTotalFavorites } = useFavorites();
+  const favoritesCount = getTotalFavorites();
   return (
     <div className="sticky top-0 z-50 bg-white border-b border-gray-200 pb-2">
       <div className="w-full h-11 bg-[#D6A6A6] flex justify-center items-center">
@@ -74,11 +80,21 @@ const HomeHeader = () => {
             <Link to="/account" className="hidden md:flex">
               <User className="w-7 h-7 text-[#D6A6A6]" />
             </Link>
-            <Link to="/guest/favorites">
+            <Link to="/guest/favorites" className="relative">
               <Flame className="w-7 h-7 text-[#D6A6A6]" />
+              {favoritesCount > 0 && (
+                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                  {favoritesCount}
+                </span>
+              )}
             </Link>
-            <Link to="/card">
+            <Link to="/card" className="relative">
               <ShoppingBasket className="w-7 h-7 text-[#D6A6A6]" />
+              {cartCount > 0 && (
+                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                  {cartCount}
+                </span>
+              )}
             </Link>
           </div>
           <div className="hidden md:flex items-center rounded-2xl border-2 border-[#D6A6A6] bg-white/90 px-3 py-1 dark:border-stone-700 dark:bg-stone-800">

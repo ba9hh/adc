@@ -166,17 +166,6 @@ const CardProducts = () => {
               >
                 Continue Shopping
               </Link>
-
-              {/* Additional Info */}
-              <div className="mt-6 pt-6 border-t border-gray-200">
-                <p className="text-sm text-zinc-500 mb-2">
-                  🚚 Free shipping on all orders
-                </p>
-                <p className="text-sm text-zinc-500 mb-2">
-                  🔒 Secure checkout guaranteed
-                </p>
-                <p className="text-sm text-zinc-500">↩️ 30-day return policy</p>
-              </div>
             </div>
           </div>
         </div>
