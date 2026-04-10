@@ -97,7 +97,7 @@ const HomeHeader = () => {
               )}
             </Link>
           </div>
-          <div className="hidden md:flex items-center rounded-2xl border-2 border-[#D6A6A6] bg-white/90 px-3 py-1 dark:border-stone-700 dark:bg-stone-800">
+          <div className="hidden md:flex items-center rounded-sm border-2 border-gray-600 bg-white/90 px-3 py-1 dark:border-stone-700 dark:bg-stone-800">
             <Search className="mr-2 h-6 w-6 text-[#D6A6A6]" />
             <input
               // value={query}
