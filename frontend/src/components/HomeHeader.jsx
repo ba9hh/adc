@@ -29,25 +29,25 @@ const HomeHeader = () => {
             to="/c/bracelets"
             className="text-sm border border-zinc-600 text-zinc-border-zinc-600 p-1"
           >
-            Braclets 📿
+            Braclets
           </Link>
           <Link
             to="/c/rings"
             className="text-sm border border-zinc-600 text-zinc-border-zinc-600 p-1"
           >
-            Rings 💍
+            Rings
           </Link>
           <Link
             to="/c/necklaces"
             className="text-sm border border-zinc-600 text-zinc-border-zinc-600 p-1"
           >
-            Necklaces 📿
+            Necklaces
           </Link>
           <Link
             to="/c/earrings"
             className="text-sm border border-zinc-600 text-zinc-border-zinc-600 p-1"
           >
-            Earrings 💎
+            Earrings
           </Link>
         </div>
         <div className="md:hidden grid grid-cols-2 gap-2 w-fit">
@@ -78,20 +78,20 @@ const HomeHeader = () => {
         <div className="flex flex-col items-end gap-2 ">
           <div className="flex items-center gap-2">
             <Link to="/account" className="hidden md:flex">
-              <User className="w-7 h-7 text-[#D6A6A6]" />
+              <User className="w-7 h-7 text-gray-600" />
             </Link>
             <Link to="/guest/favorites" className="relative">
-              <Flame className="w-7 h-7 text-[#D6A6A6]" />
+              <Flame className="w-7 h-7 text-gray-600" />
               {favoritesCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                <span className="absolute -top-2 -right-2 bg-[#D6A6A6] text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
                   {favoritesCount}
                 </span>
               )}
             </Link>
             <Link to="/card" className="relative">
-              <ShoppingBasket className="w-7 h-7 text-[#D6A6A6]" />
+              <ShoppingBasket className="w-7 h-7 text-gray-600" />
               {cartCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                <span className="absolute -top-2 -right-2 bg-[#D6A6A6] text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
                   {cartCount}
                 </span>
               )}
