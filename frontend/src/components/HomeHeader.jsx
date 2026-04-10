@@ -27,25 +27,25 @@ const HomeHeader = () => {
         <div className="hidden md:grid grid-cols-2 gap-2 w-1/2">
           <Link
             to="/c/bracelets"
-            className="text-sm border border-[#D6A6A6] text-[#D6A6A6] p-1"
+            className="text-sm border border-zinc-600 text-zinc-border-zinc-600 p-1"
           >
             Braclets 📿
           </Link>
           <Link
             to="/c/rings"
-            className="text-sm border border-[#D6A6A6] text-[#D6A6A6] p-1"
+            className="text-sm border border-zinc-600 text-zinc-border-zinc-600 p-1"
           >
             Rings 💍
           </Link>
           <Link
             to="/c/necklaces"
-            className="text-sm border border-[#D6A6A6] text-[#D6A6A6] p-1"
+            className="text-sm border border-zinc-600 text-zinc-border-zinc-600 p-1"
           >
             Necklaces 📿
           </Link>
           <Link
             to="/c/earrings"
-            className="text-sm border border-[#D6A6A6] text-[#D6A6A6] p-1"
+            className="text-sm border border-zinc-600 text-zinc-border-zinc-600 p-1"
           >
             Earrings 💎
           </Link>
@@ -70,7 +70,7 @@ const HomeHeader = () => {
             <h1 className="font-black text-[#D6A6A6] text-2xl md:text-4xl">
               ADC
             </h1>
-            <h2 className="font-semibold text-[#D6A6A6] text-xs">
+            <h2 className="font-semibold bg-[#D6A6A6] text-white text-xs">
               Autour du cou
             </h2>
           </Link>
