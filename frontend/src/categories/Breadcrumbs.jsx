@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Breadcrumbs = () => {
   return (
-    <div className="mx-0 mt-6 mb-4">
+    <div className="mx-0 mt-0 mb-4">
       <nav className=" bg-[#FAF8F6] px-6 py-2 text-sm text-black">
         <ol className="flex items-center space-x-2">
           <li>
