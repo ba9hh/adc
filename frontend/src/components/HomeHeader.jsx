@@ -18,7 +18,7 @@ const HomeHeader = () => {
   const favoritesCount = getTotalFavorites();
   return (
     <div className="sticky top-0 z-50 bg-white border-b border-gray-200 pb-2">
-      <div className="w-full h-11 bg-[#D6A6A6] flex justify-center items-center">
+      <div className="w-full h-9 bg-[#D6A6A6] flex justify-center items-center">
         <h1 className="text-white font-semibold text-sm">
           Livraison gratuite sur les commandes supérieures à 100DT
         </h1>
