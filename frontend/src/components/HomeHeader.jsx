@@ -23,7 +23,7 @@ const HomeHeader = () => {
           Livraison gratuite sur les commandes supérieures à 100DT
         </h1>
       </div>
-      <div className="px-2 md:px-10 pb-2 pt-4 grid grid-cols-3 items-center">
+      <div className="px-2 md:px-5 pb-2 pt-4 grid grid-cols-3 items-center">
         <div className="hidden md:grid grid-cols-2 gap-2 w-1/2">
           <Link
             to="/c/bracelets"
