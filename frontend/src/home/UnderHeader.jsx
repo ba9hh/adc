@@ -15,11 +15,11 @@ const UnderHeader = () => {
     //   <img src={karmous} className="w-1/5 h-full" />
     // </div>
     <div className="flex md:px-0 mt-2">
-      <img src={aneb} className="w-1/5 h-86" />
-      <img src={dele3} className="w-1/5 h-90" />
-      <img src={fruits} className="w-1/5 h-100 object-cover" />
-      <img src={kiwi1} className="w-1/5 h-90" />
-      <img src={karmous} className="w-1/5 h-86" />
+      <img src={aneb} className="w-1/5 h-100" />
+      <img src={dele3} className="w-1/5 h-104" />
+      <img src={fruits} className="w-1/5 h-114 object-cover" />
+      <img src={kiwi1} className="w-1/5 h-104" />
+      <img src={karmous} className="w-1/5 h-100" />
     </div>
   );
 };
