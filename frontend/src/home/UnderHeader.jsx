@@ -8,11 +8,11 @@ import fruits from "../assets/fruits.png";
 const UnderHeader = () => {
   return (
     <div className="md:px-0 mt-6">
-      <div className="grid grid-cols-5 w-full">
+      <div className="flex w-full">
         <img src={aneb} className="w-full h-full" />
-        <img src={dele3} className="w-full h-full pt-10" />
-        <img src={fruits} className="w-full h-full pt-20" />
-        <img src={kiwi1} className="w-full h-full pt-10" />
+        <img src={dele3} className="w-full h-full mt-10" />
+        <img src={fruits} className="w-full h-full mt-20" />
+        <img src={kiwi1} className="w-full h-full mt-10" />
         <img src={karmous} className="w-full h-full" />
       </div>
     </div>
