@@ -7,14 +7,12 @@ import fruits from "../assets/fruits.png";
 
 const UnderHeader = () => {
   return (
-    <div className="md:px-0 mt-6">
-      <div className="flex w-full">
-        <img src={aneb} className="w-full h-full" />
-        <img src={dele3} className="w-full h-full mt-10" />
-        <img src={fruits} className="w-full h-full mt-20" />
-        <img src={kiwi1} className="w-full h-full mt-10" />
-        <img src={karmous} className="w-full h-full" />
-      </div>
+    <div className="flex md:px-0 mt-6">
+      <img src={aneb} className="w-1/5 h-full" />
+      <img src={dele3} className="w-1/5 h-full mt-10" />
+      <img src={fruits} className="w-1/5 h-full mt-20" />
+      <img src={kiwi1} className="w-1/5 h-full mt-10" />
+      <img src={karmous} className="w-1/5 h-full" />
     </div>
   );
 };
