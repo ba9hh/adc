@@ -7,7 +7,7 @@ import fruits from "../assets/fruits.png";
 
 const UnderHeader = () => {
   return (
-    <div className="md:px-0 mt-0">
+    <div className="md:px-0 mt-10">
       <div className="grid grid-cols-5 w-full">
         <img src={aneb} className="w-full h-full" />
         <img src={dele3} className="w-full h-full mt-10" />
