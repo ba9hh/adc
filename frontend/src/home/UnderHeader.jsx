@@ -10,9 +10,9 @@ const UnderHeader = () => {
     <div className="md:px-0 mt-0">
       <div className="grid grid-cols-5 w-full border">
         <img src={aneb} className="w-full h-full" />
-        <img src={dele3} className="w-full h-full" />
+        <img src={dele3} className="w-full h-full mt-4" />
         <img src={fruits} className="w-full h-full" />
-        <img src={kiwi1} className="w-full h-full" />
+        <img src={kiwi1} className="w-full h-full mt-4" />
         <img src={karmous} className="w-full h-full" />
       </div>
     </div>

@@ -11,7 +11,7 @@ const Home = () => {
     <>
       {/* <Header /> */}
       <UnderHeader />
-      <FruitScroll />
+      {/* <FruitScroll /> */}
       <Build />
       <Events />
       <Team />
