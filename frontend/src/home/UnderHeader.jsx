@@ -17,7 +17,7 @@ const UnderHeader = () => {
     <div className="flex md:px-0 mt-2">
       <img src={aneb} className="w-1/5 h-full" />
       <img src={dele3} className="w-1/5 h-full" />
-      <img src={fruits} className="w-1/5 h-4/5" />
+      <img src={fruits} className="w-1/5 h-3/5" />
       <img src={kiwi1} className="w-1/5 h-full" />
       <img src={karmous} className="w-1/5 h-full" />
     </div>
